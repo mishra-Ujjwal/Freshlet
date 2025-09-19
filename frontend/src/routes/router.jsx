@@ -26,7 +26,6 @@ import SuccessPage from "../pages/SuccessPage";
 import CancelPage from "../pages/CancelPage";
 
 
-
 const router = createBrowserRouter([
     {
         path:"/",
