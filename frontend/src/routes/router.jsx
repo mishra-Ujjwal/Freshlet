@@ -2,10 +2,13 @@ import {createBrowserRouter} from 'react-router-dom'
 import App from '../App'
 import Home from '../pages/Home';
 import SearchPage from '../pages/SearchPage';
-import Signup from '../pages/signup';
-import Login from '../pages/login';
-import ForgotPasswordOtp from '../pages/ForgetPasswordOtp';
-import ResetPassword from '../pages/resetPassword';
+
+import Signup from "../pages/Signup";
+import Login from "../pages/Login";
+import ResetPassword from "../pages/ResetPassword";
+import Category from "../pages/Category";
+import UpdateProfile from "../pages/UpdateProfile";
+
 import OTPPage from '../pages/OtpPage';
 import Profile from '../pages/Profile';
 import Dashboard from '../layouts/Dashboard';
@@ -15,7 +18,7 @@ import UpdateProfile from '../pages/UpdataProfile';
 import SubCategory from '../pages/SubCategory';
 import UploadProduct from '../pages/UploadProduct';
 import Product from '../pages/Product';
-import Category from '../pages/category';
+
 import AdminPermission from '../layouts/AdminPermission';
 import ProductListPage from '../pages/ProductListPage';
 import ProductDisplay from '../pages/ProductDisplay';
