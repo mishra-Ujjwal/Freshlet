@@ -1,32 +1,29 @@
-import {createBrowserRouter} from 'react-router-dom'
-import App from '../App'
-import Home from '../pages/Home';
-import SearchPage from '../pages/SearchPage';
-
+import { createBrowserRouter } from "react-router-dom";
+import App from "../App";
+import Home from "../pages/Home";
+import SearchPage from "../pages/SearchPage";
 import Signup from "../pages/Signup";
 import Login from "../pages/Login";
+import ForgotPasswordOtp from "../pages/ForgotPasswordOtp";
 import ResetPassword from "../pages/ResetPassword";
+import OTPPage from "../pages/OTPPage";
+import Profile from "../pages/Profile";
+import Dashboard from "../layouts/Dashboard";
+import AddressPage from "../pages/AddressPage";
+import OrderPage from "../pages/OrderPage";
+import UpdateProfile from "../pages/UpdateProfile";
+import SubCategory from "../pages/SubCategory";
+import UploadProduct from "../pages/UploadProduct";
+import Product from "../pages/Product";
 import Category from "../pages/Category";
-
-
-import OTPPage from '../pages/OtpPage';
-import Profile from '../pages/Profile';
-import Dashboard from '../layouts/Dashboard';
-import AddressPage from '../pages/AddressPage';
-import OrderPage from '../pages/OrderPage';
-import UpdateProfile from '../pages/UpdataProfile';
-import SubCategory from '../pages/SubCategory';
-import UploadProduct from '../pages/UploadProduct';
-import Product from '../pages/Product';
-
-import AdminPermission from '../layouts/AdminPermission';
-import ProductListPage from '../pages/ProductListPage';
-import ProductDisplay from '../pages/ProductDisplay';
-import ScrollToTop from '../utils/ScrollTop';
-import CartPage from '../pages/CartPage';
-import CheckoutPage from '../pages/CheckoutPage';
-import SuccessPage from '../pages/SuccessPage';
-import CancelPage from '../pages/CancelPage';
+import AdminPermission from "../layouts/AdminPermission";
+import ProductListPage from "../pages/ProductListPage";
+import ProductDisplay from "../pages/ProductDisplay";
+import ScrollToTop from "../utils/ScrollTop";
+import CartPage from "../pages/CartPage";
+import CheckoutPage from "../pages/CheckoutPage";
+import SuccessPage from "../pages/SuccessPage";
+import CancelPage from "../pages/CancelPage";
 
 
 
