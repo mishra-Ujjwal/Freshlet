@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import PageNotFound from '../components/pageNotFound'
+import PageNotFound from '../components/PageNotFound'
 
 const AdminPermission = ({children}) => {
     const user = useSelector(state=>state.user)

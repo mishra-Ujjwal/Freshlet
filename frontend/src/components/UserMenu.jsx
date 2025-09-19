@@ -17,7 +17,7 @@ const UserMenu = ({ close }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const logOutHandler = async () => {
+const logOutHandler = async () => {
     try {
       const res = await Axios({ apiName: "logout" });
       if (res.data.success) {
