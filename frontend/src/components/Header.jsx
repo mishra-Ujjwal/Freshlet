@@ -8,7 +8,7 @@ import Axios from "../utils/Axios";
 import { toast } from "react-toastify";
 import { clearUserDetails, setUserDetails } from "../store/userSlice";
 import fetchUserData from "../utils/fetchUserData";
-import UserMenu from "./userMenu";
+import UserMenu from "./UserMenu";
 import AdminMenu from "./AdminMenu";
 import SearchProduct from "../pages/SearchPage";
 import CartPage from "../pages/CartPage";
