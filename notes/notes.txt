@@ -1,0 +1,7 @@
+firstly create backend file 
+1.Authentication
+.create controllers for register,login,logout,sendotp,emailVerify 
+.send email through using nodemailer(install package as well and get api key and password from nodemailer app)
+.create middleware that contain token for checking the user is login
+
+2.Cloudinary setup for images
