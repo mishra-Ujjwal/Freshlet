@@ -83,8 +83,10 @@ router.post("/upload-product", userAuth, upload.array("images", 4), async (req, 
   }
 });
 
-router.get("/allproduct",getProductData)
-router.delete("/deleteProduct",userAuth,deleteProduct)
-router.get("/product/search",searchProduct)
-router.get("/:categoryId", productListItem)
+router.get("/allproduct", getProductData);
+router.delete("/deleteProduct", userAuth, deleteProduct);
+router.get("/product/search", searchProduct);
+// Move the categoryId route to the end and make it more specific
+// Temporarily commented out to debug path-to-regexp error
+// router.get("/category/:categoryId", productListItem);
 module.exports = router;

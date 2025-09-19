@@ -21,6 +21,11 @@ const orderSchema = new mongoose.Schema({
         type:String,
         default:""
     },
+    paymentMethod:{
+        type:String,
+        enum: ['cash_on_delivery', 'stripe', 'razorpay', 'paypal'],
+        default: 'cash_on_delivery'
+    },
     deliveryAddress:{
           type:mongoose.Schema.ObjectId,
         ref:"address",

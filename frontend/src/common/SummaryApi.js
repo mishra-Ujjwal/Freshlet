@@ -1,4 +1,4 @@
-export const baseUrl = "http://localhost:4000";
+export const baseUrl =import.meta.env.VITE_APP_URL;
 
 const SummaryApi = {
   signup: {
@@ -62,7 +62,7 @@ const SummaryApi = {
     method: "delete",
   },
   productList: {
-    url: "/category/:categoryId",
+    url: "/category/category/:categoryId",
     method: "get",
   },
   addCartItem: {
@@ -100,6 +100,14 @@ const SummaryApi = {
   onlinePayment:{
     url:"/order/online-payment",
     method:"post"
+  },
+  paymentSuccess:{
+    url:"/order/payment-success",
+    method:"post"
+  },
+  getPaymentMethods:{
+    url:"/order/payment-methods",
+    method:"get"
   }
 };
 export default SummaryApi;

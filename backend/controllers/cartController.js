@@ -119,4 +119,22 @@ const getCartAll = async (req, res) => {
   }
 };
 
-module.exports = { addInCart, removeInCart,getCartAll };
+const clearCart = async (userId) => {
+  try {
+    // Delete all cart items for the user
+    await cartProductModel.deleteMany({ userId });
+    
+    // Clear the shoppingCart array in user model
+    await userModel.updateOne(
+      { _id: userId },
+      { $set: { shoppingCart: [] } }
+    );
+    
+    return { success: true, message: "Cart cleared successfully" };
+  } catch (err) {
+    console.error("Error clearing cart:", err);
+    return { success: false, message: err.message };
+  }
+};
+
+module.exports = { addInCart, removeInCart, getCartAll, clearCart };
