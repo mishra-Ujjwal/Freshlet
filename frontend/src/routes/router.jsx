@@ -7,7 +7,7 @@ import Signup from "../pages/Signup";
 import Login from "../pages/Login";
 import ResetPassword from "../pages/ResetPassword";
 import Category from "../pages/Category";
-import UpdateProfile from "../pages/UpdateProfile";
+
 
 import OTPPage from '../pages/OtpPage';
 import Profile from '../pages/Profile';
