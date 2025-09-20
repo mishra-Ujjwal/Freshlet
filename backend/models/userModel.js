@@ -3,7 +3,6 @@ const userSchema = mongoose.Schema({
   userId: {
         type: mongoose.Schema.ObjectId,
         ref: "user",
-        required: true,
     },
   name: {
     type: String,
