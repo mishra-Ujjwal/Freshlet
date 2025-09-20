@@ -1,6 +1,6 @@
 import React from 'react'
 import Profile from '../pages/Profile'
-import UserMenu from '../components/userMenu'
+import UserMenu from '../components/UserMenu'
 import AdminMenu from '../components/AdminMenu'
 import UpdateProfile from '../pages/UpdateProfile'
 import { Outlet } from 'react-router-dom'
