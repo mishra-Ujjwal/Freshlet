@@ -121,7 +121,7 @@ const login = async (req, res) => {
 
     if (email === user.email && chekPassword) {
       //generate token
-      const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET_KEY, {
+      const token = jwt.sign({ userId: user._id}, process.env.JWT_SECRET_KEY, {
         expiresIn: "7d",
       });
       res.cookie("token", token, {
