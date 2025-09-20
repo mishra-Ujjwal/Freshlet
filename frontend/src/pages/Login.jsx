@@ -24,7 +24,7 @@ const Login = () => {
       if (res.data.success) {
         toast.success(res.data.message);
         const userData = await fetchUserData();
-        dispatch(setUserDetails(userData.user)); // Make sure it's userData.user
+        dispatch(setUserDetails({...userData.user,token:res.data.token})); // Make sure it's userData.user
         navigate("/");
       } else {
         toast.error(res.data.message);

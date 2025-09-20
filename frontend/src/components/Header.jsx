@@ -41,7 +41,9 @@ const Header = () => {
 
   //acess the user data
   const user = useSelector((state) => state?.user);
-  const isLogin = Boolean(user && user._id);
+  console.log("user"+user)
+  const isLogin = Boolean(user && user._id && user.token);
+  console.log(isLogin)
 
   useEffect(() => {
     const searchPage = location.pathname === "/search/?query=";

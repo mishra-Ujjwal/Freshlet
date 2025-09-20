@@ -10,6 +10,7 @@ const initialState = {
   shoppingCart: [],
   orderHistory: [],
   role: "",
+  token: "",
 };
 export const userSlice = createSlice({
   name: "user",
@@ -25,6 +26,7 @@ export const userSlice = createSlice({
       state.shoppingCart = action.payload?.shoppingCart;
       state.orderHistory = action.payload?.orderHistory;
       state.role = action.payload?.role;
+      state.token = action.payload?.token || "";
     },
     clearUserDetails: (state) => {
       state._id= "";
@@ -36,6 +38,7 @@ export const userSlice = createSlice({
       state.shoppingCart= [];
       state.orderHistory= [];
       state.role= "";
+      state.token = "";
     },
   },
 });
